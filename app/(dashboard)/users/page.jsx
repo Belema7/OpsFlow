@@ -2,7 +2,7 @@ import React from 'react'
 
 const UsersPage = () => {
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex p-8">
       Users Page
     </div>
   )
