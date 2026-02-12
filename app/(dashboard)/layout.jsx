@@ -1,13 +1,29 @@
-import React from 'react'
-import UsersPage from './users/page'
-import SettingsPage from './settings/page'
+import Header from '@/components/dashboard/ Header'
+import Sidebar from '@/components/dashboard/ Sidebar'
 
-const layout = ({ children }) => {
+export default function DashboardLayout({ children }) {
   return (
-    <div>
-        {children}
+    <div className="flex h-screen">
+
+      {/* Sidebar */}
+      <div className="w-64 h-full">
+        <Sidebar />
+      </div>
+
+      {/* Right Side */}
+      <div className="flex-1 flex flex-col h-full">
+
+        {/* Header */}
+        <div className="h-12 shrink-0">
+          <Header />
+        </div>
+
+        {/* Scrollable Content */}
+        <main className="flex-1 overflow-y-auto">
+          {children}
+        </main>
+
+      </div>
     </div>
   )
 }
-
-export default layout
