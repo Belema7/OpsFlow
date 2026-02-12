@@ -1,0 +1,33 @@
+/app
+  /(auth)
+    /login
+      page.tsx
+    layout.tsx
+
+  /(dashboard)
+    layout.tsx
+    /overview
+    /users
+    /content
+    /analytics
+    /settings
+
+  layout.tsx
+  page.tsx
+
+
+🔟 Suggested Development Order
+
+Follow this order strictly:
+Setup layout (sidebar + header)
+Setup routing structure
+Implement authentication flow
+Protect dashboard routes
+Build Overview page
+Build Users table
+Add analytics charts
+Add settings
+Polish loading & errors
+Do not jump randomly between pages.
+
+

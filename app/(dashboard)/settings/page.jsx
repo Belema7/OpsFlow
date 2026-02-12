@@ -1,11 +1,11 @@
 import React from 'react'
 
-const HomePage = () => {
+const SettingsPage = () => {
   return (
     <div className="flex items-center justify-center h-screen">
-      Home page
+      Settings Page
     </div>
   )
 }
 
-export default HomePage
+export default SettingsPage

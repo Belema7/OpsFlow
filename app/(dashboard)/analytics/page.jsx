@@ -1,11 +1,11 @@
 import React from 'react'
 
-const HomePage = () => {
+const AnalyticsPage = () => {
   return (
     <div className="flex items-center justify-center h-screen">
-      Home page
+      Analytics Page
     </div>
   )
 }
 
-export default HomePage
+export default AnalyticsPage
