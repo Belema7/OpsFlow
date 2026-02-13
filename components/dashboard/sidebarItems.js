@@ -4,30 +4,35 @@ import { Users, TableOfContents, ChartSpline, FolderKanban, Settings } from 'luc
     {
         title: "Users",
         href: "/users",
-        icon: Users
+        icon: Users,
+        segment: "users"
     },
 
     {
         title: "content",
         href: "/content",
-        icon: TableOfContents
+        icon: TableOfContents,
+        segment: "content"
     },
 
     {
         title: "analytics",
         href: "/analytics",
-        icon: ChartSpline
+        icon: ChartSpline,
+        segment: "analytics"
     },
     {
         title: "overview",
         href: "/overview",
-        icon: FolderKanban
+        icon: FolderKanban,
+        segment: "overview"
     },
 
     {
         title: "settings",
         href: "/settings",
-        icon: Settings
+        icon: Settings,
+        segment: "settings"
     },
 
 ]
