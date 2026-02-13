@@ -10,7 +10,7 @@ export default function DashboardLayout({ children }) {
 
   return (
     // overflow-hidden prevents double scrollbars on the main page
-    <div className="flex h-screen w-full bg-slate-50 overflow-hidden">
+    <div className="flex h-screen w-full bg-background overflow-hidden text-foreground">
       {/* Sidebar - Width is handled internally via state */}
       <Sidebar isCollapsed={isCollapsed} onCollapse={handleCollapse} />
 

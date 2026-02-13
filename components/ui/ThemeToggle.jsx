@@ -30,7 +30,7 @@ const DarkModeSwitch = () => {
       {currentTheme === 'dark' ? (
         <Sun className="w-5 h-5 text-yellow-400" />
       ) : (
-        <Moon className="w-5 h-5 text-slate-700 dark:text-slate-200" />
+        <Moon className="w-5 h-5 text-slate-700 " />
       )}
     </button>
   )
