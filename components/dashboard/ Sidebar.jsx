@@ -1,5 +1,5 @@
 'use client' // Required for hooks
-
+import Logo from '@/components/ui/Logo'
 import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation' // [1] Import hook
@@ -22,7 +22,10 @@ const Sidebar = ({ isCollapsed, onCollapse }) => {
         {isCollapsed ? <ChevronRight size={14} /> : <ChevronLeft size={14} />}
       </button>
 
-      <div className="flex flex-col gap-2 p-4 mt-12">
+      <div className="flex flex-col gap-2 p-4 ">
+        <div className="p-4 mt-4">
+        <Logo />
+      </div>
         {sidebarItems.map((item) => {
           const Icon = item.icon
           // [3] Check if this link is currently active
