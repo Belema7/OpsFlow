@@ -8,7 +8,7 @@ import sidebarItems from './sidebarItems'
 
 const Sidebar = ({ isCollapsed, onCollapse }) => {
   const pathname = usePathname() // [2] Get current path
-
+  
   return (
     <aside 
       className={`relative flex flex-col bg-slate-900 text-slate-300 transition-all duration-300 ease-in-out ${
