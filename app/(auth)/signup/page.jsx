@@ -8,7 +8,7 @@ export default function SignupPage() {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false)
 
   return (
-    <div className="w-full bg-white dark:bg-slate-800 
+    <div className="w-full bg-white dark:bg-black
                     shadow-xl rounded-2xl p-8 
                     border border-slate-200 dark:border-slate-700">
 
