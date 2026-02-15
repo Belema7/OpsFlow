@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+/* @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -25,7 +25,7 @@
   --card: #1e293b;
   --card-foreground: #f8fafc;
   --border: #334155;
-}
+} */
 
 /* Enable class-based dark mode */
 @custom-variant dark (&:where(.dark, .dark *));
@@ -38,4 +38,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-montserrat-alternates)
 }

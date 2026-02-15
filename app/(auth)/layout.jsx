@@ -1,22 +1,3 @@
-// import DarkModeSwitch from '@/components/ui/ThemeToggle'
-// import Link from 'next/link'
-// import React from 'react'
-
-
-// const layout = ({ children }) => {
-//   return (
-//     <div>
-//         <div className="flex items-center justify-end p-4 gap-4">
-//         <Link href={'/'}>Home</Link>
-//         <DarkModeSwitch/>
-//         </div>
-//         {children}
-//     </div>
-//   )
-// }
-
-// export default layout
-
 import DarkModeSwitch from '@/components/ui/ThemeToggle'
 import Link from 'next/link'
 

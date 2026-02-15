@@ -3,7 +3,7 @@ import { useState } from 'react'
 import sidebarItem from './sidebarItems'
 import { usePathname } from 'next/navigation'
 import moment from 'moment'
-import ThemeToggle from '../ui/ThemeToggle'
+import ThemeToggle from '../../ui/ThemeToggle'
 
 const Header = () => {
   const pathname = usePathname()
