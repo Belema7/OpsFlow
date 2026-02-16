@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import RowTable from './RowTable';
 
 const UsersTable = ({ users }) => {
   return (
@@ -25,20 +26,13 @@ const UsersTable = ({ users }) => {
           </thead>
           <tbody className="divide-y divide-gray-100">
             {users.users.map((user) => (
-              <tr key={user.id} className="hover:bg-blue-50/50 transition-colors group">
-                <td className="px-6 py-4 text-sm text-gray-500 font-mono">#{user.id}</td>
-                <td className="px-6 py-4 text-sm font-medium text-gray-900">
-                  {user.firstName} {user.lastName}
-                </td>
-                <td className="px-6 py-4 text-sm text-gray-600 italic">{user.email}</td>
-                <td className="px-6 py-4 text-sm text-gray-600">{user.phone}</td>
-              </tr>
+              <RowTable key={user.id} user={user} />
             ))}
           </tbody>
         </table>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default UsersTable
+export default UsersTable;
