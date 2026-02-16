@@ -2,7 +2,7 @@ import React from 'react'
 
 const UsersFilters = () => {
   return (
-    <div>UsersFilters</div>
+    <div ></div>
   )
 }
 

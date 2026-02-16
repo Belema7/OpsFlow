@@ -1,17 +1,12 @@
-import UsersHeader from '@/components/dashboard/users/UsersHeader'
-import Link from 'next/link'
-import React from 'react'
+import UsersHeader from '@/components/dashboard/users/UsersHeader';
 
-const UsersLayout =  ({children}) => {
-
+const UsersLayout = ({ children }) => {
   return (
-    <div >
-        <UsersHeader />
-        {children}
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      <UsersHeader />
+      <div className="p-8">{children}</div>
     </div>
-  )
-}
+  );
+};
 
-export default UsersLayout
-
-
+export default UsersLayout;
