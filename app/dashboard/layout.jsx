@@ -9,7 +9,7 @@ export default function DashboardLayout({ children }) {
       <Sidebar />
 
       {/* Main content area */}
-      <div className="flex-1 flex flex-col min-h-screen">
+      <div className="flex-1 flex flex-col min-h-screen mx-8">
         <Navbar />
 
         <main className="flex-1 px-5 sm:px-8 lg:px-12 py-8">
@@ -21,3 +21,5 @@ export default function DashboardLayout({ children }) {
     </div>
   );
 }
+
+

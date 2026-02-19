@@ -1,7 +1,8 @@
 'use client';
 
+import { MdLogout } from "react-icons/md";
 import { sidebarItems } from './sidebarItems';
-import SidebarLink from './sidebarLink/SidebarLink';
+import SidebarLink from "./sidebarLink/SidebarLink";
 
 export default function Sidebar() {
   return (
@@ -38,6 +39,23 @@ export default function Sidebar() {
           </div>
         ))}
       </nav>
+
+      {/* Logout section – placed at the bottom */}
+      <div className="mt-auto pt-6 border-t border-gray-800/70">
+        <button
+          className="
+            flex items-center gap-3 
+            w-full px-4 py-2.5 rounded-lg text-sm font-medium
+            text-red-400 hover:text-red-300
+            hover:bg-red-950/30
+            transition-colors
+          "
+          // onClick={() => { /* logout logic here */ }}
+        >
+          <MdLogout className="text-xl opacity-90" />
+          <span>Logout</span>
+        </button>
+      </div>
     </aside>
   );
 }
