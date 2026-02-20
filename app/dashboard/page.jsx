@@ -30,8 +30,8 @@ const cardData = [
 
 const Dashboard = () => {
   return (
-    <div className="flex gap-8 p-6">
-      <div className="flex-1 min-w-0">
+    <div className="flex gap-8 p-6 ">
+      <div className="flex-1 w-3/4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
           {cardData.map((item, i) => (
             <Card key={i} {...item} />
@@ -44,7 +44,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="w-full lg:w-80 xl:w-96 shrink-0">
+      <div className="w-1/4 hidden md:block shrink-0">
         <Rightbar />
       </div>
     </div>

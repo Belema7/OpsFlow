@@ -12,7 +12,7 @@ export default function DashboardLayout({ children }) {
       <div className="flex-1 flex flex-col min-h-screen mx-8">
         <Navbar />
 
-        <main className="flex-1 px-5 sm:px-8 lg:px-12 py-8">
+        <main className="flex-1 py-8">
           {children}
         </main>
 

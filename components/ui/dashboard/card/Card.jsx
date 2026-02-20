@@ -1,25 +1,31 @@
-const Card = ({ title, value, detail, icon, color = "blue" }) => {
-  const isPositive = detail?.startsWith("+");
-  const bgColor = {
-    blue: "bg-blue-50 text-blue-600",
-    green: "bg-green-50 text-green-600",
-    purple: "bg-purple-50 text-purple-600",
-  }[color];
+import React from 'react';
+
+const Card = ({ title, number, icon, change, color }) => {
+  const isPositive = change.startsWith('+');
 
   return (
-    <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-100 hover:shadow transition-shadow min-w-[220px]">
-      <div className="flex items-center justify-between mb-4">
-        <div className={`p-3 rounded-lg ${bgColor}`}>
+    <div className="dark:bg-gray-900/95 p-5 rounded-xl shadow-sm  flex flex-col gap-4 hover:shadow-md transition-shadow duration-200">
+      <div className="flex items-center justify-between">
+        {/* Icon container with dynamic color */}
+        <div className={`p-2 rounded-lg bg-slate-50 ${color}`}>
           {icon}
         </div>
-        {detail && (
-          <span className={`text-sm font-medium ${isPositive ? 'text-green-600' : 'text-red-600'}`}>
-            {detail}
-          </span>
-        )}
+        <h3 className="text-slate-500 text-sm font-medium">{title}</h3>
       </div>
-      <h3 className="text-sm text-gray-500 font-medium mb-1">{title}</h3>
-      <p className="text-2xl font-bold">{value}</p>
+
+      <div className="space-y-1">
+        <p className="text-2xl font-bold text-slate-800">{number}</p>
+      </div>
+      
+      <div className="text-xs text-slate-400 flex gap-2">
+        {/* Percentage badge */}
+         <span className={`text-xs font-medium px-2 py-1 rounded-full ${
+          isPositive ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
+        }`}>
+          {change}
+        </span>
+        <span>vs last month</span>
+      </div>
     </div>
   );
 };
