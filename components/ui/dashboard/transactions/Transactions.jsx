@@ -50,8 +50,8 @@ const Transactions = () => {
   };
 
   return (
-    <div className="dark:bg-gray-900/95p-6 text-white rounded-xl shadow-sm  ">
-      <h2 className="text-xl font-semibold text-white mb-5">Latest Transactions</h2>
+    <div className="dark:bg-(--color-page) p-6 text-white rounded-xl shadow-sm  ">
+      <h2 className="text-xl font-semibold text-(--color-soft-text) mb-5">Latest Transactions</h2>
       <div className="overflow-x-auto">
         <table className="w-full text-left ">
           <thead>

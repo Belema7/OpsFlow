@@ -4,7 +4,7 @@ const Card = ({ title, number, icon, change, color }) => {
   const isPositive = change.startsWith('+');
 
   return (
-    <div className="dark:bg-gray-900/95 p-5 rounded-xl shadow-sm  flex flex-col gap-4 hover:shadow-md transition-shadow duration-200">
+    <div className="dark:bg-(--color-page) p-5 rounded-xl shadow-sm  flex flex-col gap-4 hover:shadow-md transition-shadow duration-200">
       <div className="flex items-center justify-between">
         {/* Icon container with dynamic color */}
         <div className={`p-2 rounded-lg bg-slate-50 ${color}`}>
