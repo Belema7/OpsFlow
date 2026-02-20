@@ -13,11 +13,12 @@ const Navbar = () => {
 
   return (
     <nav className="
-      sticky top-0 z-30
+     
       w-full bg-white/80 dark:bg-gray-900/95
       backdrop-blur-md border-b border-gray-200 dark:border-gray-800
       px-4 sm:px-6 lg:px-8
     ">
+       {/* sticky top-0 z-30 */}
       <div className="flex h-14 items-center justify-between gap-4 max-w-7xl mx-auto">
 
         <div className="
