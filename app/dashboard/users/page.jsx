@@ -6,12 +6,14 @@ const UsersPage = () => {
   // Mock Data Array
   const users = [
     {
+      id: 1,
       profile: { name: "John Doe", img: "https://i.pravatar.cc", email: "john@example.com" },
       role: "Admin",
       status: "Active",
       createdAt: "2024.01.15"
     },
     {
+      id: 2,
       profile: { name: "Sarah Smith", img: "https://i.pravatar.cc", email: "sarah@example.com" },
       role: "Editor",
       status: "Inactive",
@@ -72,7 +74,11 @@ const UsersPage = () => {
                 </td>
                 <td className='px-6 py-4 text-right'>
                   <div className='flex justify-end gap-2'>
-                    <button className='text-xs bg-emerald-500/10 text-emerald-600 px-3 py-1 rounded hover:bg-emerald-500 hover:text-white transition-all'>View</button>
+                    <Link href={`/dashboard/users/${user.id}`}>
+                      <button className='text-xs bg-emerald-500/10 text-emerald-600 px-3 py-1 rounded hover:bg-emerald-500 hover:text-white transition-all'>
+                        View
+                      </button>
+                    </Link>
                     <button className='text-xs bg-rose-500/10 text-rose-600 px-3 py-1 rounded hover:bg-rose-500 hover:text-white transition-all'>Delete</button>
                   </div>
                 </td>
