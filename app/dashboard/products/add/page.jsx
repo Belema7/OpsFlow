@@ -1,35 +1,28 @@
-import React from 'react'
+import ProductForm from "@/components/products/ProductForm";
+import Link from "next/link";
 
-const AddProduct = () => {
+export default function AddProductPage() {
   return (
-    <div className='p-6 min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100'>
-      <h1 className='text-2xl font-bold mb-6'>Add New Product</h1>
-      <div className='bg-white dark:bg-slate-900 shadow-sm rounded-xl p-6'>
-        <form>
-          <div className='mb-4'>
-            <label htmlFor="name" className='block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1'>Product Name</label>
-            <input type="text" id="name" className='w-full px-3 py-2 border border-slate-300 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-white' placeholder="Enter product name" />
-          </div>
-          <div className='mb-4'>
-            <label htmlFor="category" className='block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1'>Category</label>
-            <select id="category" className='w-full px-3 py-2 border border-slate-300 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-white'>
-              <option value="">Select Category</option>
-              <option value="electronics">Electronics</option>
-              <option value="clothing">Clothing</option>
-              <option value="home">Home & Kitchen</option>
-            </select>
-          </div>
-          <div className='mb-4'>
-            <label htmlFor="price" className='block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1'>Price ($)</label>
-            <input type="number" id="price" className='w-full px-3 py-2 border border-slate-300 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-white' placeholder="Enter price" />
-          </div>
-          <button type="submit" className='bg-indigo-600 hover:bg-indigo-70 transition-colors text-white px-4 py-2 rounded-lg font-medium text-sm'>
-            Save Product
-          </button>
-        </form>
+    <div className="space-y-6">
+      <div className="flex items-center gap-4">
+        <Link
+          href="/dashboard/products"
+          className="text-sm text-gray-400 hover:text-white transition-colors"
+        >
+          ← Back to Products
+        </Link>
+      </div>
+
+      <div className="rounded-xl border border-gray-800 bg-gray-900/80 backdrop-blur-sm p-6">
+        <h1 className="text-xl font-bold text-white mb-6">Add New Product</h1>
+
+        <ProductForm
+          onSubmit={async (values) => {
+            "use server";
+            console.log("Create product:", values);
+          }}
+        />
       </div>
     </div>
-  )
+  );
 }
-
-export default AddProduct

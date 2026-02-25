@@ -1,31 +1,28 @@
-import React from 'react'
+import UserForm from "@/components/users/UserForm";
+import Link from "next/link";
 
-const AddUser = () => {
-  return (
-    <div className="p-4 dark:bg-(--color-page) ">
-        <h1 className="text-2xl font-bold mb-4">Add New User</h1>
-        <form className="space-y-4">
-            <div>
-                <label className="block mb-1">Name</label>
-                <input type="text" className="border p-2 w-full" placeholder="Enter name" />
+export default function AddUserPage() {
+    return (
+        <div className="space-y-6">
+            <div className="flex items-center gap-4">
+                <Link
+                    href="/dashboard/users"
+                    className="text-sm text-gray-400 hover:text-white transition-colors"
+                >
+                    ← Back to Users
+                </Link>
             </div>
-            <div>
-                <label className="block mb-1">Email</label>
-                <input type="email" className="border p-2 w-full" placeholder="Enter email" />
+
+            <div className="rounded-xl border border-gray-800 bg-gray-900/80 backdrop-blur-sm p-6">
+                <h1 className="text-xl font-bold text-white mb-6">Add New User</h1>
+
+                <UserForm
+                    onSubmit={async (values) => {
+                        "use server";
+                        console.log("Create user:", values);
+                    }}
+                />
             </div>
-            <div>
-                <label className="block mb-1">Role</label>
-                <select className="border p-2 w-full">
-                    <option value="">Select role</option>
-                    <option value="admin">Admin</option>
-                    <option value="editor">Editor</option>
-                    <option value="viewer">Viewer</option>
-                </select>
-            </div>
-            <button type="submit" className="bg-blue-500 text-white p-2 rounded">Add User</button>
-        </form>
-    </div>
-  )
+        </div>
+    );
 }
-
-export default AddUser

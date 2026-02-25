@@ -1,10 +1,10 @@
 "use client";
 import { usePathname } from "next/navigation";
-import { 
-  HiOutlineMagnifyingGlass, 
-  HiOutlineChatBubbleLeftRight, 
-  HiOutlineBell, 
-  HiOutlineGlobeAlt 
+import {
+  HiOutlineMagnifyingGlass,
+  HiOutlineChatBubbleLeftRight,
+  HiOutlineBell,
+  HiOutlineGlobeAlt
 } from "react-icons/hi2";
 
 const Navbar = () => {
@@ -18,7 +18,7 @@ const Navbar = () => {
       backdrop-blur-md border-b border-gray-200 dark:border-gray-800
       px-4 sm:px-6 lg:px-8
     ">
-       {/* sticky top-0 z-30 */}
+      {/* sticky top-0 z-30 */}
       <div className="flex h-14 items-center justify-between gap-4 max-w-7xl mx-auto">
 
         <div className="
@@ -29,7 +29,7 @@ const Navbar = () => {
           {pageTitle.charAt(0).toUpperCase() + pageTitle.slice(1)}
         </div>
 
-      
+
         <div className="flex items-center gap-2 sm:gap-4">
 
           {/* Search */}
@@ -55,7 +55,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile search icon (only on small screens) */}
-          <button 
+          <button
             className="sm:hidden p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
             aria-label="Search"
           >
@@ -64,7 +64,7 @@ const Navbar = () => {
 
           {/* Icons */}
           <div className="flex items-center gap-1 sm:gap-2">
-            <button 
+            <button
               className="
                 p-2 rounded-full 
                 hover:bg-gray-100 dark:hover:bg-gray-800 
@@ -77,7 +77,7 @@ const Navbar = () => {
               <HiOutlineChatBubbleLeftRight size={22} />
             </button>
 
-            <button 
+            <button
               className="
                 p-2 rounded-full 
                 hover:bg-gray-100 dark:hover:bg-gray-800 
@@ -91,7 +91,7 @@ const Navbar = () => {
               <HiOutlineBell size={22} />
             </button>
 
-            <button 
+            <button
               className="
                 p-2 rounded-full 
                 hover:bg-gray-100 dark:hover:bg-gray-800 

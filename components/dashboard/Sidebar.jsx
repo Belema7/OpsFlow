@@ -2,7 +2,7 @@
 
 import { MdLogout } from "react-icons/md";
 import { sidebarItems } from './sidebarItems';
-import SidebarLink from "./sidebarLink/SidebarLink";
+import SidebarLink from "./SidebarLink";
 
 export default function Sidebar() {
   return (
@@ -50,7 +50,7 @@ export default function Sidebar() {
             hover:bg-red-950/30
             transition-colors
           "
-          // onClick={() => { /* logout logic here */ }}
+        // onClick={() => { /* logout logic here */ }}
         >
           <MdLogout className="text-xl opacity-90" />
           <span>Logout</span>

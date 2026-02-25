@@ -64,9 +64,9 @@ const Transactions = () => {
           </thead>
           <tbody className="text-sm">
             {transactionsData.map((item) => (
-              <tr key={item.id} className=" hover:bg-slate-50 transition-colors">
+              <tr key={item.id} className=" hover:bg-slate-50 dark:hover:bg-gray-800/50 transition-colors">
                 <td className="py-4 px-2">
-                  <div className="flex items-center gap-3 font-medium text-slate-700">
+                  <div className="flex items-center gap-3 font-medium text-slate-700 dark:text-gray-200">
                     <Image
                       src={item.img}
                       alt={item.name}
@@ -83,7 +83,7 @@ const Transactions = () => {
                   </span>
                 </td>
                 <td className="py-4 px-2 text-slate-500">{item.date}</td>
-                <td className="py-4 px-2 text-right font-semibold text-slate-700">{item.amount}</td>
+                <td className="py-4 px-2 text-right font-semibold text-slate-700 dark:text-gray-200">{item.amount}</td>
               </tr>
             ))}
           </tbody>

@@ -10,18 +10,17 @@ const Card = ({ title, number, icon, change, color }) => {
         <div className={`p-2 rounded-lg bg-slate-50 ${color}`}>
           {icon}
         </div>
-        <h3 className="text-slate-500 text-sm font-medium">{title}</h3>
+        <h3 className="text-slate-500 dark:text-slate-400 text-sm font-medium">{title}</h3>
       </div>
 
       <div className="space-y-1">
-        <p className="text-2xl font-bold text-slate-800">{number}</p>
+        <p className="text-2xl font-bold text-slate-800 dark:text-white">{number}</p>
       </div>
-      
+
       <div className="text-xs text-slate-400 flex gap-2">
         {/* Percentage badge */}
-         <span className={`text-xs font-medium px-2 py-1 rounded-full ${
-          isPositive ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
-        }`}>
+        <span className={`text-xs font-medium px-2 py-1 rounded-full ${isPositive ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
+          }`}>
           {change}
         </span>
         <span>vs last month</span>

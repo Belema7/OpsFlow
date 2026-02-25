@@ -5,9 +5,9 @@ const Footer = () => {
         Belema <span className="text-blue-600">(Admin)</span>
       </div>
       <div className="text-xs md:text-sm font-medium">
-        Built by <span className="text-slate-800">Belema</span> using 
-        <span className="text-sky-500 mx-1">Next.js</span> & 
-        <span className="text-teal-500 ml-1">Tailwind CSS</span> 
+        Built by <span className="text-slate-800 dark:text-gray-300">Belema</span> using
+        <span className="text-sky-500 mx-1">Next.js</span> &
+        <span className="text-teal-500 ml-1">Tailwind CSS</span>
         <span className="ml-2">© All rights reserved.</span>
       </div>
     </div>

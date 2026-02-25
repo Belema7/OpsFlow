@@ -1,7 +1,11 @@
-import Card from "@/components/ui/dashboard/card/Card";
-import Transactions from "@/components/ui/dashboard/transactions/Transactions";
-import Chart from "@/components/ui/dashboard/chart/Chart";
-import Rightbar from "@/components/ui/dashboard/rightbar/Rightbar";
+import Card from "@/components/dashboard/StatCard";
+// import Transactions from "@/components/dashboard/transactions/Transactions";
+// import Transactions from "@/components/dashboard/transactions/Transactions";
+// import Chart from "@/components/dashboard/chart/Chart";
+// import Rightbar from "@/components/dashboard/rightbar/Rightbar";
+import Transactions from "@/components/dashboard/Transactions";
+import Chart from "@/components/dashboard/Chart";
+import Rightbar from "@/components/dashboard/Rightbar";
 import { MdSupervisedUserCircle, MdAttachMoney, MdShoppingCart, MdPersonAdd } from "react-icons/md";
 
 const cardData = [
